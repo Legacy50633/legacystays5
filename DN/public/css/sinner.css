@@ -1,0 +1,12 @@
+body{
+    background-image: url("https://wallpapercave.com/wp/24ZxPwd.jpg");
+    background-size: cover;
+    height: 600px;
+}
+.card{
+    position: absolute;
+    left: 100px;
+    color: red;
+    
+    
+}

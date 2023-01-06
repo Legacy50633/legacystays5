@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become God</title>
+    <link rel="stylesheet" href="/css/god.css">
+</head>
+<body>
+    <%-include("../partials/navbar")%>
+    <form action="/death/sinners" method="post">
+        <div id="god">
+        <label for=" name">Name</label><br>
+       <input type="text" name="death[name]" id="name" placeholder="Name of sinner"><br>
+       <label for=" date">Date</label><br>
+       <input type="text" name="death[date]" id="date" placeholder="Specified Date"><br>
+       <label for=" time">Time</label><br>
+       <input type="text" name="death[time]" id="time" placeholder="Specified Time">
+      <br> <label for=" cause">Cause</label><br>
+       <input type="text" name="death[cause]" id="cause" placeholder="Cause of death">
+      <br>
+      <br><button class="btn btn-success">God!</button>
+    </div>
+    </form>
+    </body>
+</html>

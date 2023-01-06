@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinners</title>
+    <link rel="stylesheet" href="/css/sinner.css">
+</head>
+<body>
+    <%-include("../partials/navbar")%>
+
+
+    <br><br>
+<br><br><br><br>
+    <%for(let death of deaths){%>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><%=death.name%></h5>
+              <h6 class="card-subtitle mb-2 text-muted"><%=death.cause%></h6>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur ime fugiat eligendi praesentium facere rerum nostrum? Reprehenderit..</p>
+              <h6>Date(DD/MM/YY)<%=death.date%></h6>
+              <h6>Time(HH/MM/SS)<%=death.time%></h6>
+            <form action="/death/<%=death._id%>/edit">
+              <button class="btn btn-info">
+                Edit
+              </button>
+              
+            </form>
+            <form action="/death/<%=death._id%>">
+              <br>
+              <button class="btn btn-primary">
+                Show
+              </button>
+            </div>
+          </div>
+        <br><br>
+        <br>
+        <%}%>
+</body>
+</html>

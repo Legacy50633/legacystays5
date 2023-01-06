@@ -1,0 +1,15 @@
+body{
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.K67Ue_QS9XBbYtxW_XLp1gHaEK&pid=Api&P=0");
+background-size: cover;
+}
+#god{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 200px;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+  
+
+}
